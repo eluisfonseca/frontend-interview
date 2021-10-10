@@ -1,0 +1,16 @@
+$color-pallet: (
+  white: #f6f8f9,
+  gray: #d8d8d8,
+  black: #2c2e30,
+  blue: #37a8ee,
+  green: #00dca4,
+  yellow: #f1c40f,
+);
+
+@function useColor($color) {
+  @if map-has-key($color-pallet, $color) {
+    @return map-get($color-pallet, $color);
+  }
+
+  @warn 'Color (#{$color}) not found!';
+}

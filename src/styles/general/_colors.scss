@@ -1,0 +1,10 @@
+@import '../mixins/colors';
+
+@each $key, $val in $color-pallet {
+  .bg-#{$key} {
+    background: $val;
+  }
+  .color-#{$key} {
+    color: $val;
+  }
+}
