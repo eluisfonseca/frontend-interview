@@ -1,9 +1,9 @@
 $font-sizes: (
-  xxs: 10px,
-  xs: 11px,
-  s: 12px,
-  m: 14px,
-  l: 24px,
+  xxs: 0.5em,
+  xs: 0.8em,
+  s: 1em,
+  m: 1.5em,
+  l: 2em,
 );
 
 @function font-size($size) {

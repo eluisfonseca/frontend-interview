@@ -1,11 +1,14 @@
+@import '../mixins/font-sizes';
+
 @font-face {
-  font-family: 'Clear Sans';
+  font-family: 'Glacial Indifference';
   src: local('GlacialIndifference'),
-    url(../assets/fonts/glacialindifference-regular-webfont.ttf)
+    url('~@/assets/fonts/glacialindifference-regular-webfont.ttf')
       format('truetype'),
-    url(../assets/fonts/glacialindifference-regular-webfont.woff2)
+    url('~@/assets/fonts/glacialindifference-regular-webfont.woff2')
       format('woff2'),
-    url(../assets/fonts/glacialindifference-regular-webfont.woff) format('woff');
+    url('~@/assets/fonts/glacialindifference-regular-webfont.woff')
+      format('woff');
   font-weight: 300;
   font-style: normal;
 }
@@ -13,48 +16,27 @@
 @font-face {
   font-family: 'Glacial Indifference';
   src: local('GlacialIndifference'),
-    url(../assets/fonts/glacialindifference-bold-webfont.ttf) format('truetype'),
-    url(../assets/fonts/glacialindifference-bold-webfont.woff2) format('woff2'),
-    url(../assets/fonts/glacialindifference-bold-webfont.woff) format('woff');
+    url('~@/assets/fonts/glacialindifference-bold-webfont.ttf')
+      format('truetype'),
+    url('~@/assets/fonts/glacialindifference-bold-webfont.woff2')
+      format('woff2'),
+    url('~@/assets/fonts/glacialindifference-bold-webfont.woff') format('woff');
   font-weight: 900;
 }
 
 @font-face {
   font-family: 'Glacial Indifference';
   src: local('GlacialIndifference'),
-    url(../assets/fonts/glacialindifference-italic-webfont.ttf)
-      format('truetype'),
-    url(../assets/fonts/glacialindifference-italic-webfont.woff2)
+    url('~@/assets/fonts/glacialindifference-italic-webfont.woff2')
       format('woff2'),
-    url(../assets/fonts/glacialindifference-italic-webfont.woff) format('woff');
+    url('~@/assets/fonts/glacialindifference-italic-webfont.woff')
+      format('woff');
   font-style: italic;
 }
-
-$font-sizes: (
-  xxs: 10px,
-  xs: 11px,
-  s: 12px,
-  m: 14px,
-  l: 24px,
-);
-
-$line-heights: (
-  xxs: 13px,
-  xs: 17px,
-  s: 19px,
-  m: 20px,
-  l: 26px,
-);
 
 @each $key, $val in $font-sizes {
   .font-#{$key} {
     font-size: $val;
-  }
-}
-
-@each $key, $val in $line-heights {
-  .lh-#{$key} {
-    line-height: $val;
   }
 }
 

@@ -1,1 +1,7 @@
-@import './_colors', './_fonts';
+@import './colors', './fonts';
+
+body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
