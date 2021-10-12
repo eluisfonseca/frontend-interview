@@ -9,14 +9,15 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue';
 import Header from './components/Header.vue';
 import Profile from './components/Profile.vue';
-import Stats from './components/Stats.vue';
+import Stats from './components/Stats/Stats.vue';
 import Footer from './components/Footer.vue';
-import { store } from './appState.ts';
+import { store } from './appState';
 
-export default {
+export default Vue.extend({
   name: 'App',
   components: {
     Header,
@@ -29,7 +30,7 @@ export default {
       gameState: store.state,
     };
   },
-};
+});
 </script>
 
 <style lang="scss">
