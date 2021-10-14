@@ -1,4 +1,4 @@
-type MatchResult = 'p1' | 'p2' | 'd';
+export type MatchResult = 'p1' | 'p2' | 'd';
 interface AppState {
   matchHistory: MatchResult[];
   totalTime: number;

@@ -42,11 +42,11 @@ export default {
   methods: {
     calculateRate: function(player, isWin = true) {
       let numberOfMatches = isWin
-        ? this.$props.matchHistory.filter((winner) => winner === player).length
+        ? this.matchHistory.filter((winner) => winner === player).length
         : this.matchHistory.filter(
             (winner) => winner !== player && winner !== 'd'
           ).length;
-      return (numberOfMatches * 100) / this.matchHistory.length;
+      return ((numberOfMatches * 100) / this.matchHistory.length).toFixed(0);
     },
   },
 };

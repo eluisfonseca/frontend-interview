@@ -3,6 +3,7 @@
     <Header />
     <div class="app-content">
       <Profile />
+      <GameArea />
       <Stats />
       <Footer />
     </div>
@@ -13,8 +14,9 @@
 import Vue from 'vue';
 import Header from './components/Header.vue';
 import Profile from './components/Profile.vue';
-import Stats from './components/Stats/Stats.vue';
+import Stats from './components/stats/Stats.vue';
 import Footer from './components/Footer.vue';
+import GameArea from './components/game-area/GameArea.vue';
 import { store } from './appState';
 
 export default Vue.extend({
@@ -24,6 +26,7 @@ export default Vue.extend({
     Profile,
     Stats,
     Footer,
+    GameArea,
   },
   data() {
     return {

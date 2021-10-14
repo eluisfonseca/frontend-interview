@@ -19,7 +19,6 @@
 </template>
 
 <script>
-// addSeconds,
 import { format, setHours, addSeconds } from 'date-fns';
 import { maxMatches, store } from '../../appState';
 import SessionMatches from './Matches.vue';
